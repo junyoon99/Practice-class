@@ -38,10 +38,10 @@ int operator += (int& l, Student r)
 
 int main() 
 {
-	//Student a("Doggy", 100), b("Kitty", 90), c("Piggy", 50);
-	//int total = a + b + c;
+	Student a("Doggy", 100), b("Kitty", 90), c("Piggy", 50);
+	int total = a + b + c;
 
-	//std::cout << total;
+	std::cout << total << std::endl;
 	Student students[]
 	{
 		Student("Doggy", 100),
@@ -49,11 +49,11 @@ int main()
 		Student("Piggy", 50)
 	};
 
-	int total{};
+	total = 0;
 	for (int i = 0; i < 3; i++)
 	{
 		total += students[i];
 	}
 
-	std::cout << total;
+	std::cout << total << std::endl;
 }
